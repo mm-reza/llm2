@@ -1,0 +1,12 @@
+faiss-cpu==1.7.4
+google.generativeai==0.2.2
+InstructorEmbedding==1.0.1 
+langchain==0.0.284
+# protobuf~=3.19.0
+protobuf==4.24.4
+python-dotenv==1.0.0
+streamlit==1.28.0
+sentence_transformers==2.2.2
+tiktoken==0.4.0
+torch==2.1.0
+
