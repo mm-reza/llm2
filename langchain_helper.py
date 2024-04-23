@@ -1,9 +1,16 @@
 from langchain.vectorstores import FAISS
 from langchain.llms import GooglePalm
-from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.embeddings import HuggingFaceInstructEmbeddings
+from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
+
+# from langchain_community.document_loaders.csv_loader import CSVLoader
+# from langchain_community.vectorstores import FAISS
+# from langchain_community.llms import GooglePalm
+# from langchain_community.embeddings import HuggingFaceInstructEmbeddings
+
+
 import os
 
 from dotenv import load_dotenv
@@ -13,6 +20,7 @@ load_dotenv()  # take environment variables from .env (especially openai api key
 llm = GooglePalm(google_api_key=os.environ["GOOGLE_API_KEY"], temperature=0.2)
 # # Initialize instructor embeddings using the Hugging Face model
 instructor_embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-large")
+
 vectordb_file_path = "faiss_index"
 
 def create_vector_db():
