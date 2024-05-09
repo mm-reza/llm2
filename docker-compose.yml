@@ -1,0 +1,30 @@
+# version: '3.8'
+services:
+  app:
+    # container_name: app
+    build:
+      context: .
+      dockerfile: ./main.Dockerfile
+    command: streamlit run main.py --server.port 8000
+    # command: /start
+    # volumes:
+    #   - .:/app
+    ports:
+      - 8051:8000
+    # expose:
+    #   - 8000
+    restart: always
+    # depends_on:
+    #   # - redis
+    #   - db
+
+    # networks:
+    #   - nginxpm_default
+
+    # deploy:
+    #   replicas: 3  # Adjust the number of replicas as needed
+    #   update_config:
+    #     parallelism: 2
+    #     delay: 1s
+    #   restart_policy:
+    #     condition: on-failure
