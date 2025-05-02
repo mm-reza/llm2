@@ -1,26 +1,30 @@
-faiss-cpu==1.8.0
-google.generativeai==0.2.2
-InstructorEmbedding==1.0.1 
-langchain==0.0.284
-# langchain==0.0.300
-# langchain==0.1.16
-# protobuf~=3.19.0
-protobuf==4.24.4
-python-dotenv==1.0.0
-streamlit==1.33.0
-sentence_transformers==2.2.2
-tiktoken==0.6.0
-torch==2.2.2
-
 # faiss-cpu==1.8.0
-# google.generativeai==0.5.2
-# InstructorEmbedding==1.0.1
-# langchain==0.1.16
-# langchain-community==0.0.34
+# google.generativeai==0.2.2
+# InstructorEmbedding==1.0.1 
+# langchain==0.0.284
+# # langchain==0.0.300
+# # langchain==0.1.16
 # # protobuf~=3.19.0
-# protobuf==4.25.3
-# python-dotenv==1.0.1
+# protobuf==4.24.4
+# python-dotenv==1.0.0
 # streamlit==1.33.0
 # sentence_transformers==2.2.2
 # tiktoken==0.6.0
 # torch==2.2.2
+
+
+faiss-cpu
+google.generativeai
+InstructorEmbedding
+langchain==0.1.2
+langchain-community
+# protobuf~=3.19.0
+protobuf
+python-dotenv
+streamlit
+tiktoken
+torch
+sentence-transformers==2.2.2
+tokenizers
+transformers
+dotenv

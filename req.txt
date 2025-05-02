@@ -1,0 +1,7 @@
+langchain
+langchain-community
+InstructorEmbedding
+faiss-cpu
+google-generativeai
+python-dotenv
+
