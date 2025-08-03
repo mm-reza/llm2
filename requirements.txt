@@ -14,17 +14,17 @@
 
 
 faiss-cpu
-google.generativeai
+# google.generativeai
 InstructorEmbedding
-langchain==0.1.2
-langchain-community
+# langchain
+# langchain-community
 # protobuf~=3.19.0
 protobuf
 python-dotenv
 streamlit
 tiktoken
 torch
-sentence-transformers==2.2.2
+sentence-transformers
 tokenizers
 transformers
 dotenv
